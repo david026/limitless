@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="category">
+<h2 class="top">Perlen Category</h2>
+ <ul>
+    <!--{foreach from=$categories item=cat}-->
+	 <li><a href="{$cat.url}">{$cat.name|escape:html}</a><span class="num">{if $cat.num}({$cat.num}){/if}</span></li>
+     <!--{foreach from=$cat.cat_id item=child}-->
+     <li><a href="{$child.url}">{$child.name|escape:html}</a><span class="num">({$child.num})</span></li>
+       <!--{foreach from=$child.cat_id item=childer}-->
+     <li><a href="{$childer.url}">{$childer.name|escape:html}</a><span class="num">({$childer.num})</span></li>
+       <!--{/foreach}-->
+     <!--{/foreach}-->  
+    <!--{/foreach}--> 
+</ul>
+ </div>
+
+

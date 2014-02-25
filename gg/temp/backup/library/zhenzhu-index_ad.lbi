@@ -1,0 +1,28 @@
+<script type="text/javascript" src="themes/zhenzhu/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="themes/zhenzhu/js/main_ad.js"></script>
+<script>
+$(function() {
+ window.__Object_toJSONString = Object.prototype.toJSONString;
+ delete Object.prototype.toJSONString;
+});
+</script>
+<DIV id=imgPlay>
+<UL class=imgs id=actor>
+  <LI><A href="#" target=_blank><IMG alt="Perlenshcnmuk ad1" src="themes/zhenzhu/pic/01.jpg"></A><DIV class=btn><A title="Jetzt Kaufen" href="#" target=_blank>Jetzt Kaufen</A></DIV></LI>
+  <LI><A href="#" target=_blank><IMG alt="Perlenshcnmuk ad2" src="themes/zhenzhu/pic/02.jpg"></A><DIV class=btn><A title="Jetzt Kaufen"href="#" target=_blank>Jetzt Kaufen</A></DIV></LI>
+  <LI><A href="#" target=_blank><IMG alt="Perlenshcnmuk ad3"  src="themes/zhenzhu/pic/03.jpg"></A><DIV class=btn><A title="Jetzt Kaufen" href="#" target=_blank>Jetzt Kaufen</A></DIV></LI>
+  <LI><A href="#" target=_blank><IMG alt="Perlenshcnmuk ad4"  src="themes/zhenzhu/pic/04.jpg"></A><DIV class=btn><A title="Jetzt Kaufen" href="#" target=_blank>Jetzt Kaufen</A></DIV></LI>
+  <LI><A href="#" target=_blank><IMG alt="Perlenshcnmuk ad5"  src="themes/zhenzhu/pic/05.jpg"></A><DIV class=btn><A title="Jetzt Kaufen" href="#" target=_blank>Jetzt Kaufen</A></DIV></LI>
+  <LI><A href="#" target=_blank><IMG alt="Perlenshcnmuk ad6"  src="themes/zhenzhu/pic/06.jpg"></A><DIV class=btn><A title="Jetzt Kaufen" href="#" target=_blank>Jetzt Kaufen</A></DIV></LI>
+</UL>
+
+<DIV class=num>
+<P class=lc></P>
+<P class=mc></P>
+<P class=rc></P>
+</DIV>
+
+<DIV class=num id=numInner></DIV>
+
+<DIV class=prev>vorheriger</DIV>
+<DIV class=next>nächster</DIV></DIV>

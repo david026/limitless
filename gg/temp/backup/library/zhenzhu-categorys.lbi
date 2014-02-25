@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $cat_list} -->
+
+
+
+<div class="category">
+<h2 class="top">Perlen Category</h2>
+ <ul>
+   <!-- {foreach from=$cat_list item=cat} -->
+      <li><a href="{$cat.url}">{$cat.cat_name|escape:html} </a><span class="num">{if $cat.goods_num}({$cat.goods_num}){/if}</span></li>
+ <!--{/foreach}--> 
+</ul>
+ </div>
+<!-- {/if} -->

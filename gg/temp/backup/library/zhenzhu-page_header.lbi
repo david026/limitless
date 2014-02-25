@@ -1,0 +1,73 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<div id="warp">
+
+<!--header-->
+<div id="header">
+<h1 class="logo"><a href="/" name="top" title="{$page_title}">Echte Perle|Perlenketten|Perlenschmuck Online Outletshop  bis zum 67% Rabatt.</a></h1>
+<div class="topmenu">
+<ul>
+<li class="toplogin">  {insert_scripts files='transport.js,utils.js'} {insert name='member_info'} </li>
+  <!--{if $navigator_list.top}-->
+<li class="menu">   <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+            
+    <!-- {/foreach} -->
+
+   </li>
+   <!-- {/if} -->
+</ul>
+</div>
+<div class="toptool">
+<ul>
+<li class="seachen">
+  <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
+   <input name="keywords" type="text" id="keyword" value="Alle Perlen" onclick="if(this.value=='Alle Perlen')this.value=''" onfocus="this.select()" onblur="if (value ==''){value=''}" onmouseover="this.focus()"  class="seachen_text" />
+   <input name="imageField" type="submit" value="Suchen" class="serchen_but" style="cursor:pointer;" />
+
+   </form>
+
+  <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+
+</li>
+<li class="Warenkorb"> {insert name='cart_info'} 
+  <input type="button" onclick="window.location.href='/flow.php'" class="zuikasse" value="zur Kasse">
+</li>
+</ul>
+</div>
+
+<div id="nav">
+<ul>
+<li> <a href="/" {if $navigator_list.config.index eq 1} class="on"{/if} >{$lang.home}</a></li>
+  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+ <li><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="on"{/if}>{$nav.name}</a></li>
+
+ <!-- {/foreach} -->
+  
+  
+  
+</ul>
+
+</div>
+
+<div class="herderfooter"></div>
+</div>
